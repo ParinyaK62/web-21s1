@@ -20,6 +20,8 @@ app.use(express.static('public'))
 
 // Routes
 app.get('/', index)
+app.get('/courses/:code', courseDetails)
+
 // TODO later
 
 const PORT = 3000
