@@ -1,5 +1,6 @@
 const { getCourse } = require('../_services/fakedb')
 
+
 const courseDetails = (req, res) => {
   const courseCode = req.params.code
   const course = getCourse(courseCode)
@@ -39,5 +40,7 @@ const courseStudents = (req, res) => {
     ]
   })
 }
+
+
 
 module.exports = { courseDetails, courseUnits, courseStudents }

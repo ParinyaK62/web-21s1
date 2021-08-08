@@ -2,6 +2,7 @@ const express = require('express')
 const expHbs = require('express-handlebars')
 const {index} = require('./features/indexController')
 const { courseDetails,courseUnits,courseStudents } = require('./features/courseController')
+const { videoDetails1,videoDetails2 } = require('./features/videoController')
 
 const app = express()
 
@@ -23,6 +24,8 @@ app.get('/', index)
 app.get('/courses/:code', courseDetails)
 app.get('/courses/:code/units', courseUnits)
 app.get('/courses/:code/students', courseStudents)
+app.get('/videos/128', videoDetails1)
+app.get('/videos' , videoDetails2)
 
 // TODO later
 
