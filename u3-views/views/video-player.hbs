@@ -1,0 +1,14 @@
+{{#>dbtube}}
+<div class='playback'>
+  <div class='playback-player'>
+    <img src='/images/128.webp' />
+    <h3>Vue.js: The Documentary</h3>
+    <p class='stats'>570,554 views · 24 Feb 2020</p>
+  </div>
+  <div class="playback-videos">
+    {{#each this}}
+    {{>video-tease tease=this}}
+    {{/each}}
+    </div>
+  </div>
+{{/dbtube}}
